@@ -181,6 +181,7 @@ body {
   background: var(--accent-color);
   border-color: var(--accent-color);
   transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
 }
 
 .control-btn:disabled {
