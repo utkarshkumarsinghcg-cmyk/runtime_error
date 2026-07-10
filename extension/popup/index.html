@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Browser Companion</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <div class="logo-area">
+        <span class="icon">🎙️</span>
+        <h1>AI Companion</h1>
+      </div>
+      <div class="status-indicator">
+        <span class="dot idle" id="status-dot"></span>
+        <span id="status-text">Ready</span>
+      </div>
+    </header>
+
+    <main class="chat-container">
+      <div class="chat-history" id="chat-history">
+        <div class="message assistant">
+          <div class="msg-bubble">
+            Hello! Click "Extract Page" or speak a command (e.g. "summarize this") to start.
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="controls-footer">
+      <div class="audio-controls">
+        <button id="btn-play" class="control-btn" title="Play">▶</button>
+        <button id="btn-pause" class="control-btn" title="Pause" disabled>⏸</button>
+        <button id="btn-stop" class="control-btn" title="Stop" disabled>⏹</button>
+      </div>
+
+      <div class="action-row">
+        <button id="btn-extract" class="action-btn">Extract Page</button>
+        <button id="btn-mic" class="mic-btn">🎙️ Hold & Speak</button>
+      </div>
+
+      <div class="text-input-fallback">
+        <input type="text" id="text-input" placeholder="Type a message or ask a question..." />
+        <button id="btn-send">Send</button>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
