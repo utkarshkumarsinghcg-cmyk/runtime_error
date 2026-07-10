@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050716" />
+      <stop offset="60%" stop-color="#0d0824" />
+      <stop offset="100%" stop-color="#1b0833" />
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="30%" stop-color="#3b82f6" />
+      <stop offset="70%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#d946ef" />
+    </linearGradient>
+
+    <!-- Metallic Silver Gradient for R -->
+    <linearGradient id="silverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="30%" stop-color="#e2e8f0" />
+      <stop offset="70%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+
+    <!-- Brain Lobe Gradient -->
+    <linearGradient id="brainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Gloss Overlay -->
+    <linearGradient id="glossGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Ring with Gradient -->
+  <circle cx="64" cy="64" r="60" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="4.5" />
+
+  <!-- Brain Lobe Shape (Right Side) -->
+  <path d="M72,32 C82,32 94,40 98,50 C102,58 102,68 96,76 C92,82 82,86 74,86 C74,86 70,82 72,74 C74,66 76,58 72,50 C68,42 66,34 72,32 Z" fill="url(#brainGrad)" />
+
+  <!-- Brain Circuitry Lines (Cyan) -->
+  <path d="M76,42 L84,48 L84,56" stroke="#00f2fe" stroke-width="2" fill="none" stroke-linecap="round" />
+  <path d="M80,36 L90,44 L90,52" stroke="#00f2fe" stroke-width="2" fill="none" stroke-linecap="round" />
+  <path d="M84,60 L94,62 L94,70" stroke="#00f2fe" stroke-width="2" fill="none" stroke-linecap="round" />
+  <path d="M76,68 L86,72 L86,78" stroke="#00f2fe" stroke-width="2" fill="none" stroke-linecap="round" />
+
+  <!-- Glowing Circuit Dots -->
+  <circle cx="84" cy="56" r="3" fill="#00f2fe" />
+  <circle cx="90" cy="52" r="3" fill="#00f2fe" />
+  <circle cx="94" cy="70" r="3" fill="#00f2fe" />
+  <circle cx="86" cy="78" r="3" fill="#00f2fe" />
+
+  <!-- Stylized Futuristic Letter R -->
+  <path d="M30,48 L56,48 C72,48 76,58 64,68 L80,92 L62,92 L48,72 L44,72 L44,92 L30,92 Z" fill="url(#silverGrad)" />
+  <!-- Inner Loop cutout of R -->
+  <path d="M44,58 L54,58 C58,58 60,62 56,66 L44,66 Z" fill="#0c0824" />
+
+  <!-- Terminal Prompt >_ -->
+  <text x="32" y="78" fill="#00f2fe" font-family="'Courier New', monospace" font-size="14" font-weight="bold">&gt;_</text>
+
+  <!-- Sparkle/Star in Top Right -->
+  <path d="M102,24 Q106,28 110,24 Q106,20 102,24 Z" fill="#f472b6" />
+  <circle cx="106" cy="24" r="1.5" fill="#ffffff" />
+
+  <!-- Gloss Highlight Overlay -->
+  <path d="M4,64 A60,60 0 0,1 124,64 A60,30 0 0,0 4,64 Z" fill="url(#glossGrad)" />
+</svg>

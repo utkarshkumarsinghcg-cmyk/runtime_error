@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "AI Browser Companion",
+  "version": "1.0.0",
+  "description": "An intelligent browser assistant that reads, understands, and talks about any webpage.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "icons": {
+    "16": "popup/favicon.svg",
+    "48": "popup/favicon.svg",
+    "128": "popup/favicon.svg"
+  },
+  "action": {
+    "default_title": "Toggle AI Companion",
+    "default_icon": "popup/favicon.svg"
+  },
+  "background": {
+    "service_worker": "background/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/Readability.js", "content/content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "popup/*",
+        "popup/assets/*"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      }
+    }
+  }
+}
