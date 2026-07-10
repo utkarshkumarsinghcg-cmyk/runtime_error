@@ -6,7 +6,7 @@
 
 **Team: Run Time Error**
 **Track:** Track 4 — AI Browser Companion
-**Build Window:** 15 Hours · 4 Team Members · ~45–60 Person-Hours
+**Build Window:** 31 Hours · 4 Team Members · ~45–60 Person-Hours
 
 ![Status](https://img.shields.io/badge/status-hackathon--build-orange)
 ![Platform](https://img.shields.io/badge/platform-Chrome%20Extension-4285F4)
